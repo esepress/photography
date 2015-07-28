@@ -419,12 +419,14 @@ h3.blog-post-title {
       background-color: black;
       padding: 5px;
       cursor: pointer;
-      margin:10px 20px 20px;
+      float: left;
+      margin:10px 20px 20px 10px;
   }
   span.next-buttton {
       background-color: black;
       padding: 5px;
       cursor: pointer;
-      margin:10px 20px 20px;
+      float: right;
+      margin:10px 40px 20px;
   }
 }
