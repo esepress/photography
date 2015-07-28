@@ -1,3 +1,15 @@
+/*  ################################################################
+
+  File Name: style.css
+  Template Name: Photography
+  Author: ThemeWagon.com
+  
+################################################################# */ 
+
+/* ----------------------------------------------------
+  General
+------------------------------------------------------- */
+
 body{
   font-family: 'Raleway', sans-serif;
 }
@@ -6,11 +18,6 @@ body{
   height: 200%;
   width: 30px;
   position: fixed;
-}
-@media (max-width: 1100px){
-  .navbar.navbar-default.navbar-fixed-top {
-      margin-top: -50px;
-    }
 }
 
 .canvas.canvas-slid {
@@ -48,18 +55,7 @@ a.navmenu-brand {
   top: 50%;
 }
 
-@media (min-width: 100px){
-  button.navbar-toggle {
-    width: 40px;
-    background:url(../img/navicon.jpg);
-    z-index: 9;
-    color: black;
-    position: fixed;
-    top: 50%;
-    left: -15px;
-    background-repeat: no-repeat;
-  }
-  }
+
 
 html{
   overflow-x: hidden;
@@ -74,7 +70,9 @@ html{
   transition:.3s;
 }
 
-/*Main Page Contents*/
+/* ----------------------------------------------------
+  Main Page Content
+------------------------------------------------------- */
 
 .home-page-header {
   position: fixed;
@@ -102,22 +100,15 @@ h2.sub-title-home {
   font-size: 15px;
 }
 
-@media (max-width: 1090){
-  div.canvas {
-    margin-top: -50px !important;
-    height: 110% !important;
-  }
-  .carousel, .item, .active {
-  height: 110% !important;
-  margin-top: -50px !important;
-}
-}
+
 .copyright-text {
   text-align: center;
   color: rgba(255, 228, 196, 0.21);
 }
 
-/*Gallery */
+/* ----------------------------------------------------
+  Gallery
+------------------------------------------------------- */
 
 /* ---- grid ---- */
 
@@ -150,15 +141,10 @@ h2.sub-title-home {
 .grid-item--height2 {
   height: 200px;
 }
-@media (min-width: 1200px){
-.canvas.gallery {
-  margin-top: -20px;
-  padding: 10px;
-  /* margin-bottom: 28px; */
-}
-}
 
-/*Blog*/
+/* ----------------------------------------------------
+  Blog
+------------------------------------------------------- */
 .blog-post {
   width: 330px;
   padding: 27px 0px 0 24px;
@@ -188,7 +174,9 @@ h3.blog-post-title {
 }
 
 
-/*Sidebar*/
+/* ----------------------------------------------------
+  Sidebar
+------------------------------------------------------- */
 
 .post-category {
   text-align: left;
@@ -218,18 +206,7 @@ h4.left-side.sidebar-title {
 .blog-post-single {
   margin-top: 23px;
 }
-@media (min-width: 1100px){
-  p.blog-text-single {
-    width: 95%;
-    text-align: justify;
-  
-    margin-top: 20px;
-    padding: 0 60px;
-    font-size: 17px;
-    line-height: 27px;
-    letter-spacing: 1px;
-}
-}
+
 
 #imagelightbox
 {
@@ -240,7 +217,11 @@ h4.left-side.sidebar-title {
     touch-action: none;
 }
 
-/*Contact*/
+/* ----------------------------------------------------
+  Contact
+------------------------------------------------------- */
+
+
 .contact-bg.col-md-8.col-sm-12 {
   position: relative;
   left: -15px;
@@ -277,6 +258,72 @@ button#contact-submit {
 .col-md-6.add-text {
   margin: 14px 0 20px;
 }
+
+
+
+body.contact-page {
+    background-color: white;
+}
+textarea#message {
+    width: 100%;
+}
+.canvas.contact-page {
+    background-color: white;
+}
+
+
+/* ----------------------------------------------------
+  Responsive
+------------------------------------------------------- */
+
+@media (min-width: 1100px){
+  p.blog-text-single {
+    width: 95%;
+    text-align: justify;
+  
+    margin-top: 20px;
+    padding: 0 60px;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+}
+@media (min-width: 1200px){
+.canvas.gallery {
+  margin-top: -20px;
+  padding: 10px;
+  /* margin-bottom: 28px; */
+}
+}
+@media (max-width: 1090){
+  div.canvas {
+    margin-top: -50px !important;
+    height: 110% !important;
+  }
+  .carousel, .item, .active {
+  height: 110% !important;
+  margin-top: -50px !important;
+}
+}
+
+@media (min-width: 100px){
+  button.navbar-toggle {
+    width: 40px;
+    background:url(../img/navicon.jpg);
+    z-index: 9;
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: -15px;
+    background-repeat: no-repeat;
+  }
+  }
+@media (max-width: 1100px){
+  .navbar.navbar-default.navbar-fixed-top {
+      margin-top: -50px;
+    }
+}
+
 @media (max-width: 400px){
     .blog-post {
       width: 100%;
@@ -330,6 +377,9 @@ h3.blog-post-title {
 }
 
 }
+
+
+
 @media (min-width:991px){
 .col-md-4.col-sm-12.contact-bar {
     margin-left: -30px;
@@ -347,12 +397,36 @@ h3.blog-post-title {
       height: 110% !important;
   }
 }
-body.contact-page {
-    background-color: white;
+
+@media (min-width: 1100px){
+  span.prev-buttton {
+      background-color: black;
+      padding: 5px;
+      float: left;
+      cursor: pointer;
+      margin:10px 0 20px;
+  }
+  span.next-buttton {
+      background-color: black;
+      padding: 5px;
+      float: right;
+      cursor: pointer;
+      margin:10px 0 20px;
+  }
 }
-textarea#message {
-    width: 100%;
-}
-.canvas.contact-page {
-    background-color: white;
+@media (max-width: 1099px){
+  span.prev-buttton {
+      background-color: black;
+      padding: 5px;
+      cursor: pointer;
+      float: left;
+      margin:10px 20px 20px 10px;
+  }
+  span.next-buttton {
+      background-color: black;
+      padding: 5px;
+      cursor: pointer;
+      float: right;
+      margin:10px 40px 20px;
+  }
 }
